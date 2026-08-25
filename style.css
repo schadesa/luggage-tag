@@ -1,0 +1,139 @@
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #f0f4f8;
+  color: #1a202c;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem 3rem;
+}
+
+/* ===== Card ===== */
+.card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem 1.5rem;
+  width: 100%;
+  max-width: 480px;
+  margin-top: 1rem;
+}
+
+/* ===== Section separator ===== */
+.card + .card {
+  margin-top: 1.5rem;
+}
+
+/* ===== Typography ===== */
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  color: #1a202c;
+}
+
+.intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.owner-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  border-radius: 0.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 0.875rem;
+  transition: filter 0.15s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:last-of-type {
+  margin-bottom: 0;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  filter: brightness(0.92);
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.btn-call {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.btn-whatsapp {
+  background: #25d366;
+  color: #000000;
+}
+
+.btn-email {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* ===== Note ===== */
+.note {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: #4b5563;
+  border-left: 3px solid #d1d5db;
+  padding-left: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+/* ===== Language label ===== */
+.lang-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* ===== Responsive tweak for wider screens ===== */
+@media (min-width: 540px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
